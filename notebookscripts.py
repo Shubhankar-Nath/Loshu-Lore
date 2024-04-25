@@ -11,7 +11,7 @@ class PDF_Utils:
         pdf.set_font("Arial", size = 26)
         pdf.ln(85)
         pdf.write(5, "Your Numerology Guide")
-        pdf.set_font("Calibri", size = 12)
+        pdf.set_font("Arial", size = 12)
         pdf.ln(15)
         pdf.write(5, "Report For: " + username)
         pdf.ln(10)
@@ -23,8 +23,9 @@ class PDF_Utils:
     def add_page(pdf):
         pdf.add_page()
         #code to add a footer to the page
-        pdf.image("./assets/logo no text.jpg", 0, 280, WIDTH)
+        pdf.image("./assets/logo text.png", 0, 280, PDF_Utils.WIDTH/4)
 
 
     def save_pdf(filename, pdf):
-        pdf.output("filename"+'_report.pdf')
+        pdf.output(filename+'_report.pdf')
+
