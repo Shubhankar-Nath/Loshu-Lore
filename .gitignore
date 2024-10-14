@@ -203,4 +203,7 @@ pyrightconfig.json
 .history
 .ionide
 
+# Not to upload any pdf files
+Report*.pdf
+
 # End of https://www.toptal.com/developers/gitignore/api/visualstudiocode,jupyternotebooks,python
